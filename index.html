@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+
+    <title>SideBar</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-id-card"></i></span>
+                    <span class="title">Pilota</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-people-group"></i></span>
+                    <span class="title">Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-flag-checkered"></i></span>
+                    <span class="title">Gare</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-ticket"></i></span>
+                    <span class="title">Prenotazioni</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="togle" onclick="togleMenu()">
+        
+    </div>
+    <script type="text/javascript">
+    function togleMenu(){
+        let navigation = document.querySelector('.navigation');
+        let togle = document.querySelector('.togle');
+        navigation.classList.toggle('active');
+        togle.classList.toggle('active');
+    }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(54, 58, 58);
+}
+
+.navigation {
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    background-color: rgb(32, 32, 32);
+    transition: 0.5s;
+    overflow: hidden;
+    color: #fff;
+}
+
+.navigation:hover,
+.navigation.active {
+    width: 200px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover {
+    background-color: #ff0800f1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: none;
+    width:100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a .title {
+    line-height: 50px;
+}
+
+.navigation ul li a .icon{ 
+    position: relative;
+    display: block;
+    min-width:60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .las {
+    font-size: 30px;
+}
+
+.togle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color:  rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+.togle:hover {
+    background-color: #ff0800f1;
+}
+.togle::before {
+    font-family: fontAwesome;
+    content: "\f0c9";
+    font-weight: 400; 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.togle.active:before {
+    content: "\f00d";
+}
